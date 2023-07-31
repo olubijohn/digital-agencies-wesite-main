@@ -1,0 +1,175 @@
+.hidden {
+    display: none;
+}
+.active {
+    outline: 1px dotted orange;
+    padding: 3px 70px;
+} 
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.burger, .cancel {
+    font-size: 30px;
+    cursor: pointer;
+}
+.burger {
+    margin-right: 18px;
+}
+.burger:hover, .burger:focus {
+    outline: 1px dotted #bbb;
+}
+
+.cancel {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: #f1eeee;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.links-call {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 55%;
+}
+.links ul {
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.call-to-ation span {
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all ease-in-out .3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.call-to-ation span:hover {
+    font-size: 13px;
+}
+
+.call-to-ation button, .contact button {
+    text-transform: uppercase;
+    padding: 14px 18px;
+    background-color: black;
+    color: white;
+    transition: all ease-in-out .2s;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 1px 0 black;
+}
+
+.call-to-ation button:hover, .contact button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(.86);
+}
+.contact {
+    display: none;
+}
+#customer {
+    font-size: 18px;
+    color: #ccc;
+    padding-left: 8px;
+}
+
+.contact button {
+    display: flex;
+    justify-content: baseline;
+}
+
+@media screen and (max-width: 900px) {
+    .links-call {
+        flex-basis: auto;
+    }
+    .links ul {
+        gap: 13px;
+        font-size: 14px;
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .top {
+        justify-content: space-between;
+    }
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .contact {
+        display: flex;
+        transform: scale(.76);
+    }
+    .cancel, .burger {
+        display: block;
+    }
+    .links-call {
+        position: fixed;
+        top: 0;
+        left: 200%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:  var(--dark-green);
+        color: #f1eeee;
+        transition: all ease-in-out .5s;
+        z-index: 10;
+    }
+    .links, .call-to-ation {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .links ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 22px;
+        font-size: 33px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .links ul li:hover {
+        color: #bbb;
+    }
+    .links ul .home {
+        display: block;
+    }
+    .call-to-ation {
+        display: flex;
+        flex-direction: column;
+    }
+    .call-to-ation span {
+        border: 2px solid #f1eeee;
+        padding: 8px 0;
+    }
+    .call-to-ation span:hover {
+        transform: scale(.87);
+    }
+    .call-to-ation button  {
+        margin-top: 25px;
+        font-size: 16px;
+        background-color: #f1eeee;
+        color: #000;
+    }
+}

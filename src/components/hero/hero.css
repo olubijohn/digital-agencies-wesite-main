@@ -1,0 +1,114 @@
+.hero {
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px 0;
+    flex-direction: column;
+}
+
+.hero .portfolio {
+    padding: 6px 10px;
+    border-radius: 50px;
+    border: 1px solid #a19d9d;
+    color: #a19d9d;
+    gap: 20px;
+}
+
+.hero .portfolio a {
+    background-color: #f58533;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 15px;
+    transition: all ease-out .3s;
+}
+.hero .portfolio a:hover {
+    background-color: #cfcbcb;
+}
+.hero .portfolio a .arrow {
+    font-size: 20px;
+}
+.hero .text {
+    width: 100%;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 37px;
+}
+
+.text .text-head h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.text .text-head h3 {
+    font-size: 46px;
+}
+.text .text-head h3 span {
+    color: #a19d9d;
+}
+.text .text-body {
+    margin-top: 20px;
+}
+.text .text-body span {
+    font-size: 16px;
+    color: #a19d9d;
+}
+
+.hero .email-contact {
+    width: 100%;
+    gap: 6px;
+    margin-top: 20px;
+} 
+
+.hero .email-contact input {
+    width: 270px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #a19d9d;
+    color: #fff;
+}
+.hero .email-contact input:focus {
+    border-style: dotted;
+    outline: none;
+}
+.hero .email-contact .email-btn {
+    padding: 8px 20px;
+    background-color: #f58533;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.new-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio {
+        transform: scale(.89);
+        margin-bottom: 13px;
+    }
+    .text .text-head h1, .text .text-head h3 {
+        font-size: 24px;
+    }
+    .text .text-body {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .hero .email-contact input {
+        width: 62%;
+    }
+    .hero .email-contact .email-btn {
+        padding: 8px 14px;
+    }
+    .new-section {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+} 

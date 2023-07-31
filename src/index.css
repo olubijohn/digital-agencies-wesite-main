@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+:root {
+  --dark-green: #060D0D;
+}
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  background-color: var(--dark-green);
+}
+
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: 900px) and (max-width: 2000px)  {
+  .section {
+      padding-left: 230px;
+      padding-right: 230px;
+  }
+}

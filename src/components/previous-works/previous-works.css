@@ -1,0 +1,62 @@
+.btns {
+    gap: 10px;
+    margin: 20px 0;
+}
+.btns button {
+    padding: 10px 14px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    transition: all ease .5s;
+}
+.btns button.focus, .btns button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.works {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+.work {
+    position: relative;
+    height: 260px;
+    width: 100%;
+    cursor: pointer;
+}
+.work img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+.work .hover-text {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    transform: scale(0);
+    transition: all ease .5s;
+}
+.work:hover .hover-text {
+    transform: scale(1);
+}
+.all-portfolio {
+    transition: all ease-in-out .3s;
+}
+.all-portfolio:hover {
+    transform: scale(.9);
+}
+
+@media screen and (min-width: 700px) { 
+    .works {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 900px) { 
+    .works {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

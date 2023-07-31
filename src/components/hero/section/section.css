@@ -1,0 +1,21 @@
+.item {
+    padding: 35px 25px;
+    height: 150px;
+    background-color: #fff;
+    border-left: 0.3px solid #ccc;
+    flex: 1;
+    background-color: #ebebeb;
+}
+.item .item-head {
+    font-weight: 600;
+}
+.item .item-body {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        border-bottom: 0.3px solid #ccc;
+    }
+}

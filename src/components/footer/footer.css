@@ -1,0 +1,100 @@
+footer {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    padding: 50px 100px;
+    gap: 20px;
+    text-align: center;
+}
+footer h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer div {
+    flex: 1;
+}
+footer .one {
+    padding: 0 25px;
+    width: 300px;
+}
+footer .one .image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #b1b1b1;
+}
+footer .one p {
+    font-size: 15px;
+    color: #b1b1b1;
+}
+footer .one .image img {
+    width: 40px;
+    height: 40px;
+}
+footer .one .image span {
+    text-transform: uppercase;
+}
+footer .two ul {
+    list-style-type: none;
+    color: #b1b1b1;
+}
+footer .two ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+footer .three .spans {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #b1b1b1;
+    font-size: 15px;
+}
+footer .four span {
+    font-size: 15px;
+    color: #b1b1b1;
+}
+footer .four .addrs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+footer .four .addrs .emails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+footer .four a {
+    color: #b1b1b1;
+    font-size: 15px;
+}
+.copyright {
+    background-color: #fff;
+    padding: 15px 0;
+    color: #b1b1b1;
+    text-align: center;
+    font-size: 15px;
+}
+@media screen and (min-width: 800px) {
+    footer {
+        flex-direction: row;
+        text-align: start;
+    }
+    footer .one .image {
+        gap: 8px;
+        justify-content: start;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .copyright {
+        text-align: start;
+        padding: 15px 150px;
+    }
+} 

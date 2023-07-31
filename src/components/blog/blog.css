@@ -1,0 +1,26 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.post, .post-img {
+    width: 330px;
+    cursor: pointer;
+}
+
+.post .post-img img {
+    width: inherit;
+    object-fit: contain;
+}
+
+.post .post-head, .read-more {
+    margin: 10px;
+}
+.read-more {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #b1b1b1;
+}

@@ -1,0 +1,56 @@
+.get-started {
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    padding: 50px 0;
+    gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.get-started .background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: none;
+    width: 100%;
+}
+
+.get-started .socials {
+    display: flex;
+    gap: 35px;
+}
+.get-started .socials .icon {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.get-started h1 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.get-started .socials .icon:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 999px;
+}
+.get-started button {
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+.get-started button:hover {
+    transform: scale(.95);
+}
+@media screen and (min-width: 800px) {
+    .get-started h1 {
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+    .get-started button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}

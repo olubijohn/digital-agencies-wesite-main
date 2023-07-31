@@ -1,0 +1,51 @@
+.services-sec {
+ color: #fff;
+ width: 100%;
+ font-family: 'Montserrat', sans-serif;
+ margin-bottom: 100px;
+}
+.services-sec p.text, .services-sec h1 {
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+.services-sec p.text {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.services-sec h1 {
+    margin: 30px 0;
+    font-size: 33px;
+}
+
+.services-sec .services {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+.services-sec .services .service {
+    text-align: left;
+    background-color: #ebebeb;
+    color: #252424;
+    padding: 30px 20px;
+    border-bottom: 1px solid #a89a9a;
+    height: 250px;
+}
+.services-sec .services .service .service-icon {
+    font-size: 60px;
+}
+.services-sec .services .service .service-head h4 {
+}
+.services-sec .services .service .service-body p {
+    font-size: 15px;
+    margin-top: 12px;
+}
+@media screen and (min-width: 700px) { 
+    .services-sec .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services-sec .services .service {
+        border-right: 1px solid #a89a9a;
+        height: 270px;
+    }
+}
